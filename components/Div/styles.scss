@@ -1,0 +1,56 @@
+/* Define standard variables and values for website */
+$bgcolor: rgb(241, 241, 241);
+$textcolor: rgb(63, 63, 63);
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+  font-family: sans-serif;
+}
+
+.component {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  &__button {
+      font-size: 1.6rem;
+
+      &--medium {
+        font-size: 2rem
+      }
+
+      &--large {
+          font-size: 3.5rem;
+      }
+  }
+
+  &__p,
+  &__h1 {
+    color: #333;
+    font-size: 1.6rem;
+
+    &--medium {
+      font-size: 2rem;
+    }
+
+    &--large {
+      font-size: 3.5rem;
+    }
+
+    &--white {
+      color: white;
+    }
+  }
+
+  &--dark {
+      background-color: rgb(88, 88, 88);
+  }
+
+  &--red {
+    background-color: rgb(255, 0, 0);
+}
+}
